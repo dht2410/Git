@@ -1,0 +1,4 @@
+### git
+
+- git add a.txt	添加文件a.txt进入暂存区
+- git commit -m “first”    提交
