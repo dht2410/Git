@@ -31,7 +31,11 @@
 
   git merge branchA       将A中代码合并到主分支
 
-- 
+- git checkout develop
+
+  git merge develop2     将develop2合并到develop
+
+- dang222222222
 
 ##### 远程操作（在相应目录下工作）
 
@@ -41,4 +45,3 @@
 - git clone git@github.com:dht2410/Git.git      克隆项目，下来就是一个git仓库
 - git remote add origin git@github.com:dht2410/Git.git     将本地仓库与远程仓库进行关联
 - git remote -v      查看本仓库有哪些远程仓库
-- 
