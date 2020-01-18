@@ -43,12 +43,15 @@
 
 - git stash      暂时将没有commit的代码切换到别的分支
 - git stash pop     切换回来，并删除stash记录
+- git cherry-pick [commit_id]     假如我开了个分支给master消除了bug，此时想把develop的bug也消除掉，只需要切换到develop分支，采用修复bug的commit_id就可
 
 
 
 - git checkout master
 
   git merge branchA       将A中代码合并到主分支
+
+  如果master和branchA都同时给修改了同一个文件，那么merge会发生冲突，需手动解决
 
 - git checkout develop
 
@@ -59,12 +62,14 @@
 
 - git reset --hard HEAD^    回退到上一个版本
 - git reset --hard HEAD~100    回退到上100个版本
+- HEAD指向的是当前分支的最新版本，创建分支也是添加指针
 
 ##### 远程操作（在相应目录下工作）
 
 - git pull origin master    把远程拉到本地
 - git push origin master    把本地master分支推到远程
-- git push origin develop     把本地develop分支推到远程
+- git push origin develop     把本地develop分支推到远程,如果失败应先pull下来，在本地合并后再push
 - git clone git@github.com:dht2410/Git.git      克隆项目，下来就是一个git仓库
 - git remote add origin git@github.com:dht2410/Git.git     将本地仓库与远程仓库进行关联
+- git branch --set-upstream-to=origin/<branch> dev    指定远程分支对应的本地分支dev
 - git remote -v      查看本仓库有哪些远程仓库
