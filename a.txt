@@ -1,4 +1,9 @@
 ### git
 
+- git init    将某个文件夹设置为git仓库
 - git add a.txt	添加文件a.txt进入暂存区
 - git commit -m “first”    提交
+- git branch     显示现在的分支
+- git branch a     创建分支a
+- git branch -d a    删除分支a
+- git checkout a     切换到分支a
