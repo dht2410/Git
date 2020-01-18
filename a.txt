@@ -35,7 +35,11 @@
 
   git merge develop2     将develop2合并到develop
 
-- dang222222222
+
+
+
+- git reset --hard HEAD^    回退到上一个版本
+- git reset --hard HEAD~100    回退到上100个版本
 
 ##### 远程操作（在相应目录下工作）
 
