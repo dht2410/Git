@@ -24,7 +24,13 @@
 
 - git checkout -b a      创建并切换到a分支
 
-- git checkout --a.md      撤销还没有 add 进暂存区的文件
+
+
+- git checkout a.md      撤销还没有 add 进暂存区的文件
+
+- git reset HEAD a.md      清除进入暂存区的更改
+
+  git checkout a.md      撤销工作区的更改
 
 
 
