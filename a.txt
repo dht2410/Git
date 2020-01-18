@@ -1,9 +1,43 @@
 ### git
 
+##### 本地命令
+
 - git init    将某个文件夹设置为git仓库
 - git add a.txt	添加文件a.txt进入暂存区
-- git commit -m “first”    提交
+- git add .      添加所有修改的文件进入暂存区
+- git commit -m “first”    提交到本地仓库
 - git branch     显示现在的分支
 - git branch a     创建分支a
 - git branch -d a    删除分支a
 - git checkout a     切换到分支a
+- git checkout -b a      创建并切换到a分支
+- git checkout a.md      撤销还没有 add 进暂存区的文件
+
+
+
+- git diff     比较当前文件和暂存区文件的差别
+- git diff <$id1> <$id2> # 比较两次提交之间的差异
+  git diff <branch1>..<branch2> # 在两个分支之间比较
+  git diff --staged # 比较暂存区和版本库差异
+
+
+
+- git stash      暂时将没有commit的代码切换到别的分支
+- git stash pop     切换回来，并删除stash记录
+
+
+
+- git checkout master
+
+  git merge branchA       将A中代码合并到主分支
+
+- 
+
+##### 远程操作（在相应目录下工作）
+
+- git pull origin master    把远程拉到本地
+- git push origin master    把本地master分支推到远程
+- git push origin develop     把本地develop分支推到远程
+- git clone git@github.com:dht2410/Git.git      克隆项目，下来就是一个git仓库
+- git remote add origin git@github.com:dht2410/Git.git     将本地仓库与远程仓库进行关联
+- git remote -v      查看本仓库有哪些远程仓库
