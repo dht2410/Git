@@ -1,17 +1,30 @@
 ### git
 
+为什么Git比其他版本控制系统设计得优秀，因为**Git跟踪并管理的是修改，而非文件**。
+
 ##### 本地命令
 
 - git init    将某个文件夹设置为git仓库
+
 - git add a.txt	添加文件a.txt进入暂存区
+
 - git add .      添加所有修改的文件进入暂存区
+
 - git commit -m “first”    提交到本地仓库
+
+  ![image-20200118225200997](C:\Users\dht24\AppData\Roaming\Typora\typora-user-images\image-20200118225200997.png)
+
 - git branch     显示现在的分支
+
 - git branch a     创建分支a
+
 - git branch -d a    删除分支a
+
 - git checkout a     切换到分支a
+
 - git checkout -b a      创建并切换到a分支
-- git checkout a.md      撤销还没有 add 进暂存区的文件
+
+- git checkout --a.md      撤销还没有 add 进暂存区的文件
 
 
 
