@@ -10,7 +10,7 @@
 
 - git add .      添加所有修改的文件进入暂存区
 
-- git commit -m “first”    提交到本地仓库
+- git commit -m “first”    提交到本地仓库，合并到本地的分支
 
   ![image-20200118225200997](C:\Users\dht24\AppData\Roaming\Typora\typora-user-images\image-20200118225200997.png)
 
@@ -63,6 +63,20 @@
 - git reset --hard HEAD^    回退到上一个版本
 - git reset --hard HEAD~100    回退到上100个版本
 - HEAD指向的是当前分支的最新版本，创建分支也是添加指针
+- 前面有（HEAD->master）代表这是当前master分支的HEAD
+- 前面有（origin/master）代表的是远程的分支
+
+
+
+- git tag    查看版本
+- git tag v1.0   设置版本号，它就是指向某个commit的指针，只不过不能移动
+- git tag v1.0 [commit_id]    设置那次提交的版本号
+
+
+
+- 关于配置
+- git config -l    查看配置
+- git config --global alias.psm "push origin master"
 
 ##### 远程操作（在相应目录下工作）
 
@@ -73,3 +87,11 @@
 - git remote add origin git@github.com:dht2410/Git.git     将本地仓库与远程仓库进行关联
 - git branch --set-upstream-to=origin/<branch> dev    指定远程分支对应的本地分支dev
 - git remote -v      查看本仓库有哪些远程仓库
+
+##### 关于fork
+
+1. 先从别人那里fork，然后就到了自己的仓库
+2. 然后用git clone命令clone到自己的本地
+3. 进行修改
+4. 推送到自己的远程仓库
+5. 发起PR
