@@ -2,6 +2,8 @@
 
 为什么Git比其他版本控制系统设计得优秀，因为**Git跟踪并管理的是修改，而非文件**。
 
+![image-20200120201732770](C:\Users\dht24\AppData\Roaming\Typora\typora-user-images\image-20200120201732770.png)
+
 ##### 本地命令
 
 - git init    将某个文件夹设置为git仓库
